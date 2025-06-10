@@ -1,0 +1,66 @@
+
+/* .custom-body{
+  margin: 150px 0px 100px 0px;
+} */
+
+.doctor-profile-container {
+    min-height: 100vh;
+    background: linear-gradient(to right, #809ce9, #ffffff);
+    padding: 20px 0;
+    margin-top: 50px;
+  }
+  
+  .avatar-container {
+    position: relative;
+  }
+  
+  .icon-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon-circle i {
+    font-size: 24px;
+  }
+  
+  .location-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    font-size: 0.875rem;
+  }
+  
+  .rounded-4 {
+    border-radius: 0.75rem;
+  }
+  
+  .nav-pills .nav-link {
+    color: #495057;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-pills .nav-link:hover {
+    background-color: #e9ecef;
+  }
+  
+  .nav-pills .nav-link.active {
+    background-color: #0d6efd;
+    color: white;
+  }
+
+  
+  @media (max-width: 767.98px) {
+    .col-md-4.bg-primary {
+      border-radius: 0 0 1rem 1rem !important;
+      padding-top: 2rem !important;
+      padding-bottom: 2rem !important;
+    }
+  }

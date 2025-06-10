@@ -1,0 +1,115 @@
+/* Doctor Profile Page */
+.bg-DoctorProfile { 
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 35%;  
+  height: 100%; 
+  z-index: -1; 
+  margin-top: 95px;
+}
+
+.doc-h{
+  margin-top: 100px;
+}
+
+.profile-card {
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.profile-content {
+  width: 65%;  
+  margin-left: auto;
+  padding: 2rem;
+}
+
+.form-control, .form-select {
+  border-width: 2px;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  box-shadow: none !important;
+}
+
+/* Button and Star Styling */
+.btn-primary, .btn-outline-primary {
+  font-weight: 500;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover, .btn-outline-primary:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 4px 8px rgba(13, 110, 253, 0.25);
+}
+
+.btn-outline-primary:hover {
+  box-shadow: 0 4px 8px rgba(13, 110, 253, 0.1);
+}
+
+.star-rating {
+  color: #FFC107;
+  transition: transform 0.2s;
+}
+
+.star-rating:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .bg-DoctorProfile {
+    display: none;
+  }
+  
+  .profile-content {
+    width: 100%;
+    margin-left: 0;
+    padding: 20px 15px;
+  }
+}
+  
+  /* User Profile And Update-info , Header and Footer */
+  
+  .profile-bg {
+    background-color: rgb(206, 232, 251);
+    margin-top:130px ;
+  }
+  
+  
+  /* profile page */
+  .mp{
+    margin-top: 120px;
+  }
+  
+  .ProfileInformation-H{
+    background-color: rgb(7, 87, 161);
+
+  }
+
+  .medical-h{
+    max-height: 675px;
+  }
+
+  .warning-delete{
+    color: rgb(137, 12, 12);
+    font-size: 9px;
+    text-align: center;
+    margin: auto;
+  } 
+  
+  .update-info-body {
+    background-color: rgb(206, 232, 251);
+    margin-top:130px ;
+    height: 100vh;
+  }
+  

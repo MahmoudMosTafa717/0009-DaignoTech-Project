@@ -1,0 +1,46 @@
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    z-index: 999;
+    padding: 10px 20px;
+  }
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+  .user-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .user-name {
+    margin-right: 15px;
+  }
+  .logout-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+background-color: #1E56A0;
+    font-size: 16px;
+  }
+.text-dark {
+    --bs-text-opacity: 1;
+    color: rgb(255 255 255) !important;
+}
