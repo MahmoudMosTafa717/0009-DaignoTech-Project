@@ -11,7 +11,7 @@ const diagnosisSchema = new mongoose.Schema(
     diagnosisResult: [
       {
         disease: String,
-        probability: Number, // Store confidence scores if available
+        probability: Number,
         description: String,
         precautions: [String],
       },

@@ -3,7 +3,6 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const nodemailer = require("nodemailer");
 const User = require("../models/userModel");
-const userController = require("../controllers/userController");
 const router = express.Router();
 const { sendPasswordResetCode } = require("../services/emailService");
 const auth = require("../../../middlewares/authMiddleware");
@@ -14,7 +13,15 @@ const auth = require("../../../middlewares/authMiddleware");
 // });
 
 //Get All users
-router.get("/", userController.getAllusers);
+router.get("/", async (req, res) => {
+  // console.log(req.headers);
+  try {
+    const allUsers = await User.find({}, { __v: 0 });
+    res.status(200).json({ data: allUsers });
+  } catch (err) {
+    res.status(400).json({ error: err.message });
+  }
+});
 
 router.post("/register", async (req, res) => {
   try {
